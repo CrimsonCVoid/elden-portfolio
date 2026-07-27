@@ -321,6 +321,12 @@ section{padding:96px 0;position:relative}
 .row-minor .brand-logo span{font-size:14px}
 .row-minor .star{font-size:14px}
 
+.trusted-link{text-decoration:none;display:inline-block}
+.trusted-link .sec-head{transition:color .3s}
+.trusted-link:hover .sec-head{color:var(--pink-deep)}
+.see-all{color:var(--ink);font-weight:600;text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--pink-deep);text-decoration-thickness:2px;transition:color .25s}
+.see-all:hover{color:var(--pink-deep)}
+
 /* ============ pillars / content ============ */
 .pillar{margin-bottom:84px}
 .pillar:last-child{margin-bottom:0}
@@ -661,8 +667,10 @@ footer .heart{color:var(--pink-deep)}
 <!-- ================= TRUSTED BY ================= -->
 <section class="trusted" id="trusted">
   <div class="wrap">
-    <h2 class="sec-head anton pink reveal">Trusted By <span style="color:var(--pink-deep)">✶</span></h2>
-    <p class="trusted-sub reveal">Brands &amp; partners I've created for</p>
+    <a class="trusted-link reveal" href="brands.html">
+      <h2 class="sec-head anton pink">Trusted By <span style="color:var(--pink-deep)">✶</span></h2>
+    </a>
+    <p class="trusted-sub reveal">Brands &amp; partners I've created for · <a class="see-all" href="brands.html">see them all →</a></p>
   </div>
   <div class="logo-carousel row-major" aria-label="Brand partners">
     <div class="logo-track">
